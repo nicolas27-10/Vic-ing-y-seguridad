@@ -4,9 +4,9 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding-left: 7%;
-    padding-right: 7%;;
-
+    margin: 0;
+    margin-left: 7%;
+    margin-right: 7%;;
 }
 
 header{
@@ -49,6 +49,10 @@ nav a:hover {
     border-radius: 40px;
     
 }
+
+nav a:active{
+    color:black;
+}
 .brand img {
     width: 75px;
     height: 75px
@@ -66,9 +70,9 @@ nav a:hover {
     font-family: Helvetica, sans-serif;
     line-height: 1;
     color: black;
-    display: flex;
+    display: flex-box;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     text-align: center;
 }
 .btn-primary {
@@ -104,13 +108,16 @@ nav a:hover {
 }
 
 #page-container {
-    position: relative;
+    /* position: relative; */
     min-height: 70vh;
+    /* min-height: 100%; */
+    height: 100%;
+    width: 100%;
 }
   
 #content-wrap {
     margin-top: 8%;
-    padding-bottom: 2.5rem;   /* altura de pie de página */
+    /* padding-bottom: 2.5rem;   altura de pie de página */
     background: rgb(255, 255, 255, .8) 
 }
   
@@ -121,24 +128,30 @@ nav a:hover {
     width: 100%;
     height: 4.5rem;   
     padding: 1;         altura de pie de página */
-
-    margin-top:150px;
+    position: fixed;
+    bottom: 0;
+    /* margin-top:150px; */
     width:100%;
     height:4.5rem;
     background-color: rgb(36, 36, 36);
+    align-items: center;
+    /* display: inline; */
+    justify-content: space-between;
+
 }
 
 .grid{
-    display: grid;
-    grid-template-columns: 30% 30% 30% 9%;
+    display: flex;
     text-align: center;
     align-items: center;
+    justify-content: space-between;
     color: rgba(255, 255, 255, 0.541);
-
+    padding-inline: 7%;
+    height: 100%;
 }
 
 .grid div{
-    padding:  1.5em;
+   
 }
 
 .grid a{
@@ -157,8 +170,7 @@ nav a:hover {
 }
 
 .logo-wsp:hover{
-    width: 30px;
-    height: 30px;
+    scale: 1.2;
 }
 
 .content-grid{
@@ -208,9 +220,9 @@ nav a:hover {
     border-radius: 20px;
 }
 
-.block{
+/* .block{
     display: inline-block;
-}
+} */
 
 h1{
     font-family: sans-serif;
